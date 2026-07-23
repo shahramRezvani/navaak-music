@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Simple range input styling for the progress bar */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #7c3aed;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 9999px;
+  background: #7c3aed;
+}
